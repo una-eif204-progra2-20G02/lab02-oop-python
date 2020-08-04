@@ -13,7 +13,12 @@
  * Abstract Class of Person
  */
 class Person {
-
+private:
+    string firstname;
+    string lastname;
+    int documentld;
+public:
+    
 };
 
 
