@@ -17,8 +17,8 @@ public:
     Administrative(const string& firstName, const string& lastName, int documentID, double monthlySalary);
     double getMonthlySalary();
     void setMonthlySalary(double monthlySalary);
-    double salary();
-    string toString();
+    double salary() override;
+    string toString() override;
 
 };
 

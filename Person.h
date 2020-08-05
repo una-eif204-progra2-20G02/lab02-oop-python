@@ -17,6 +17,18 @@ private:
     string lastname;
     int documentld;
 public:
+    Person();
+    Person(const string& firstName, const string& lastName, int documentId);
+    virtual ~Person(){}
+    string getFirstName();
+    void setFirstName(string& firstName);
+    string getLastName();
+    void setLastName(string& lastName);
+    int getDocumentId();
+    void setDocumentId(int documentId);
+    virtual double salary();
+    virtual string toString();
+
     
 };
 
