@@ -6,9 +6,8 @@
 #define LAB02_OOP_PERSON_H
 
 
-#include <string>
-#include <ostream>
-
+#include <iostream>
+using namespace std;
 /**
  * Abstract Class of Person
  */
