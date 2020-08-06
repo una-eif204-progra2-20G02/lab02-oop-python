@@ -6,7 +6,7 @@
 #define LAB02_OOP_PROFESSOR_H
 #include "Person.h"
 
-class Professor: public Person {
+class Professor :public Person {
 private:
     double monthlySalary;
     double commissionRate;
@@ -15,9 +15,9 @@ public:
     Professor(double monthlySalary, double commissionRate);
     Professor(const string& firstName, const string& lastName, int documentId, double monthlySalary, double commissionRate);
     virtual ~Professor();
-    void setMonthlySalary();
+    void setMonthlySalary(double);
     double getMonthlySalary();
-    void setCommissionRate();
+    void setCommissionRate(double);
     double getCommissionRate();
     double salary();
     string toString();
