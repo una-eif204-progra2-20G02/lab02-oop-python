@@ -15,13 +15,13 @@ using namespace std;
  */
 class Person {
 private:
-    string firstname;
-    string lastname;
+    string firstName;
+    string lastName;
     int documentId;
 public:
     Person();
     Person(const string& firstName, const string& lastName, int documentId);
-    virtual ~Person(){};
+    virtual ~Person();
     string getFirstName();
     void setFirstName(string& firstName);
     string getLastName();
