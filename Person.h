@@ -7,6 +7,8 @@
 
 
 #include <iostream>
+#include <string>
+#include <sstream>
 using namespace std;
 /**
  * Abstract Class of Person
@@ -15,11 +17,11 @@ class Person {
 private:
     string firstname;
     string lastname;
-    int documentld;
+    int documentId;
 public:
     Person();
     Person(const string& firstName, const string& lastName, int documentId);
-    virtual ~Person(){}
+    virtual ~Person(){};
     string getFirstName();
     void setFirstName(string& firstName);
     string getLastName();
