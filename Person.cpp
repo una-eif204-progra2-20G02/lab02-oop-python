@@ -10,12 +10,12 @@ Person::Person(){
     this->documentId=0;
 }
 
-/*Person::Person(const string& firstName, const string& lastName, int documentId){
+Person::Person(const string& firstName, const string& lastName, int documentId){
     //REVISAR
     this->firstName=firstName;
     this->lastName=lastName;
     this->documentId=documentId;
-}*/
+}
 
 Person::~Person(){
 
@@ -53,8 +53,8 @@ string Person::toString(){
     stringstream s;
     s << "Person" << endl;
     s << "First name: " << firstName << endl;
-    s << "Last name;: " << lastName << endl;
-    s << "Document Id;: " << documentId << endl;
+    s << "Last name: " << lastName << endl;
+    s << "Document Id: " << documentId << endl;
     return s.str();
 
 }

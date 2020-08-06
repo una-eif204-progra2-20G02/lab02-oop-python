@@ -14,7 +14,7 @@ Administrative::Administrative(double monthlySalary)
     this->monthlySalary = monthlySalary;
 }
 
-Administrative::Administrative(const string &firstName, const string &lastName, int documentId, double monthlySalary) /* : Person (firstName, lastName, documentId)*/
+Administrative::Administrative(const string &firstName, const string &lastName, int documentId, double monthlySalary) : Person (firstName, lastName, documentId)
 {
     this->monthlySalary = monthlySalary;
 }
@@ -23,7 +23,7 @@ string Administrative::toString()
 {
     stringstream s;
     s << "Administrative" << endl;
-    //s << Person::toString();
+    s << Person::toString();
     s << "Monthly salary: " << monthlySalary << endl;
     return s.str();
 }

@@ -8,16 +8,15 @@ Professor::Professor(){
     this->commissionRate = 0.0;
 }
 
-Professor::Professor(double monthlySalary, double commissionRate)  /*Revisar esto: :Person(firstName, lastName, documentId)*/{
+Professor::Professor(double monthlySalary, double commissionRate) {
     this->monthlySalary = monthlySalary;
     this->commissionRate = commissionRate;
 }
 
-/*Professor::Professor(const string& firstName, const string& lastName, int documentId, double monthlySalary, double commissionRate){
-    //Revisar
+Professor::Professor(const string& firstName, const string& lastName, int documentId, double monthlySalary, double commissionRate) : Person (firstName, lastName, documentId){
     this->monthlySalary = monthlySalary;
     this->commissionRate = commissionRate;
-}*/
+}
 
 Professor::~Professor(){
 
@@ -46,7 +45,7 @@ double Professor::salary(){
 string Professor::toString(){
     stringstream s;
     s << "Professor" << endl;
-    //s << Person::toString();
+    s << Person::toString();
     s << "Monthly salary: " << monthlySalary << endl;
     s << "Commission rate: " << commissionRate << endl;
 
