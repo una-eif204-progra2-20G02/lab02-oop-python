@@ -2,64 +2,58 @@
 // Created by Maikol Guzman on 8/2/20.
 //
 
-/*
+
 #include "University.h"
 
-University::University(){
-    this->name="";
-}
-
-University::University(const string& name){
-    this->name=name;
-}
-
-University::University(const string &name, const Professor &professor, const Administrative &administrative,const vector<Professor *> &professorList, const vector<Administrative *> &administrativeList){
-
-}
-string University::getName(){
-    return name;
-}
-
-void setName(const string &name){
+University::University() {
 
 }
 
-string getProfessor(){
- return professor;
-}
-
-void University::setProfessor(const Professor &professor){
+University::University(const string &name) {
 
 }
 
-const Administrative getAdministrative(){
-}
-
-void University::setAdministrative(const Administrative &administrative){
+University::University(const string &name, const Professor &professor, const Administrative &administrative,
+                       const vector<Professor> &professorList, const vector<Administrative> &administrativeList) {
 
 }
 
-void addAdministrative(Administrative*){
+string University::getName() {
+    return std::string();
+}
+
+void University::setName(const string &name) {
 
 }
 
-vector<Administrative>* getListAdministrative(){
+Professor University::getProfessor() {
+    return Professor();
+}
+
+void University::setProfessor(const Professor &professor) {
 
 }
 
-void University::addProfessor(Professor*){
+Administrative University::getAdministrative() {
+    return Administrative();
+}
+
+void University::setAdministrative(const Administrative &administrative) {
 
 }
 
-vector<Professor>* getListProfessor(){
+void University::addAdministrative(Administrative) {
 
 }
 
-void University::AddProfessor(Professor*){
+void University::getListAdministrative() {
 
 }
 
-void University::AddAdministrative(Administrative*){
+void University::addProfessor(Professor) {
 
 }
- */
+
+void University::getListProfessor() {
+
+}
