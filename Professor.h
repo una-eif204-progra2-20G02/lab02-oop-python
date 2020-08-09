@@ -20,7 +20,7 @@ public:
     void setCommissionRate(double);
     double getCommissionRate();
     double salary() const override;
-    string toString();
+    string toString() const override;
 
 
 

@@ -45,14 +45,11 @@ void Person::setDocumentId(int documentId){
     this->documentId = documentId;
 }
 
-/*double Person::salary(){
- return 0.0;
-}*/
 
 string Person::toString()const{
     stringstream s;
 
-    s << firstName <<  lastName <<endl;
+    s << firstName << " " << lastName << endl;
     s << "Doc Id: " << documentId << endl;
     return s.str();
 

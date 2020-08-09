@@ -9,35 +9,26 @@ using namespace std;
 #include "Administrative.h"
 #include "University.h"
 
-
 int main() {
 
-/*
-    University* university=new University("University");
-    Professor* professor1 = new Professor();
-    Professor* professor2 = new Professor();
-    Administrative* administrative1= new Administrative();
-    Administrative* administrative2= new Administrative();
-
-    university->addProfessor(professor1);
-    university->addProfessor(professor2);
-    university->addAdministrative(administrative1);
-    university->addAdministrative(administrative2);
-
-
+    University university("University");
+    string name1 = "Mike", name2 = "Pedro", lastName1 = "Guzman", lastName2 = "Sanchez";
+    string name3 = "Marta", name4 = "Andrea", lastName3 = "Rojas", lastName4 = "Jaramillo";
+    //------------------------------------------------------------------------------------------------------------------
+    Professor professor1(name1, lastName1, 1234567890, 1575000.00, 5);
+    Professor professor2(name2, lastName2, 1286608618, 1050000.00, 5);
+    //------------------------------------------------------------------------------------------------------------------
+    Administrative administrative1(name3, lastName3, 272923934, 800000.00);
+    Administrative administrative2(name4, lastName4, 272923934, 500000.00);
+    //------------------------------------------------------------------------------------------------------------------
+    university.addProfessor(professor1);
+    university.addProfessor(professor2);
+    university.addAdministrative(administrative1);
+    university.addAdministrative(administrative2);
+    //------------------------------------------------------------------------------------------------------------------
+    university.getListProfessor();
+    cout << endl;
+    university.getListAdministrative();
     system("pause");
     return 0;
-
-
-*/
-    //testing
-    /*Person person("Diana", "Fallas", 117770654);
-    cout << person.toString() << endl;
-
-    Administrative admin("Esperancita", "Gutierrez", 123456789, 350000);
-    cout << admin.toString() << endl;
-
-    Professor profe("Manuel", "Sutano", 123456789, 350000, 156877);
-    cout << profe.toString();*/
-
 }

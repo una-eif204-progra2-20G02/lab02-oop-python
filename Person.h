@@ -29,7 +29,7 @@ public:
     void setLastName(string& lastName);
     int getDocumentId();
     void setDocumentId(int documentId);
-    virtual double salary()const = 0;;
+    virtual double salary() const = 0;
     virtual string toString() const;
 
     
