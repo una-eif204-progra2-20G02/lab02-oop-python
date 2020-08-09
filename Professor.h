@@ -19,8 +19,8 @@ public:
     double getMonthlySalary();
     void setCommissionRate(double);
     double getCommissionRate();
-    double salary() override;
-    string toString() override;
+    double salary() const override;
+    string toString();
 
 
 

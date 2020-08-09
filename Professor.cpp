@@ -38,16 +38,12 @@ double Professor::getCommissionRate(){
     return commissionRate;
 }
 
-double Professor::salary(){
-    return 0.0;
+double Professor::salary() const{
+    return (monthlySalary+commissionRate);
 }
 
 string Professor::toString(){
     stringstream s;
-    s << "Professor" << endl;
-    s << Person::toString();
-    s << "Monthly salary: " << monthlySalary << endl;
-    s << "Commission rate: " << commissionRate << endl;
-
+    s << "Professor Information:" << Person::toString() << "Salary: " << salary() << endl;
     return s.str();
 }
