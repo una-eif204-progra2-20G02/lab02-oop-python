@@ -22,9 +22,7 @@ Administrative::Administrative(const string &firstName, const string &lastName, 
 string Administrative::toString()
 {
     stringstream s;
-    s << "Administrative" << endl;
-    s << Person::toString();
-    s << "Monthly salary: " << monthlySalary << endl;
+    s << "Administrative Information" << Person::toString() <<"Monthly salary: " << salary() << endl;
     return s.str();
 }
 
@@ -38,8 +36,8 @@ double Administrative::getMonthlySalary()
     return monthlySalary;
 }
 
-double Administrative::salary()
+double Administrative::salary()const
 {
-    return 0.0;
+    return (monthlySalary+commissionRate);
 
 }
