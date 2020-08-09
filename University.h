@@ -4,7 +4,7 @@
 
 #ifndef LAB02_OOP_UNIVERSITY_H
 #define LAB02_OOP_UNIVERSITY_H
-
+/*
 #include <vector>
 #include "Professor.h"
 #include "Administrative.h"
@@ -12,16 +12,14 @@
 class University {
 private:
     string name;
-   /*
-    * Professor professor;
-    * Administrative administrative;
-    * vector<Professor*> professorList;
-    * vector<Administrative*> administrativeList;
-    */
+    Professor* professor;
+    Administrative* administrative;
+    vector<Professor*> professorList;
+    vector<Administrative*> administrativeList;
 
 public:
 
-    /*University();
+    University();
     University(const string& name);
     University(const string &name, const Professor &professor, const Administrative &administrative,const vector<Professor *> &professorList, const vector<Administrative *> &administrativeList);
 
@@ -43,10 +41,10 @@ public:
     void AddProfessor(Professor*);
     void AddAdministrative(Administrative*);
 
-    */
+
 
 
 };
-
+*/
 
 #endif //LAB02_OOP_UNIVERSITY_H
